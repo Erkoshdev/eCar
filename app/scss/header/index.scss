@@ -1,0 +1,264 @@
+.header-top {
+  background: #1E2020;
+}
+
+.header-row {
+  display: flex;
+  padding: 30px 0;
+}
+
+.search-container {
+  margin-left: auto;
+  position: relative;
+  height: fit-content;
+}
+
+.search-form {
+  display: flex;
+  width: 435px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  align-items: center;
+}
+
+.search-form input {
+  border: none;
+  flex: 1;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 8px;
+}
+
+.search-form input::placeholder {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+.search-btn {
+  margin: -1px -1px -1px 0;
+  background: #9BCB30;
+  padding: 8px 20px;
+  height: calc(100% + 2px);
+  text-align: center;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+
+.search-result {
+  width: 285px;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  display: none;
+}
+
+.search-result.show {
+  display: block;
+}
+
+.search-result-item {
+  padding: 7px 16px;
+  width: 100%;
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-tools {
+  display: flex;
+  margin-left: 45px;
+}
+
+.header-tools-col {
+  position: relative;
+}
+
+.header-tools-col + .header-tools-col {
+  margin-left: 48px;
+}
+
+.header-tools-col + .header-tools-col:before {
+  content: '';
+  position: absolute;
+  left: -23px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.header-tools-item {
+  position: relative;
+  padding-left: 21px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.header-tools-item.bold {
+  font-weight: 700;
+}
+
+.header-tools-item i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-tools-item + .header-tools-item {
+  margin-top: 5px;
+}
+
+.compare-amount {
+  border-radius: 16px;
+  background:  #9BCB30;
+  padding: 4px 8px;
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  margin-left: 6px;
+  display: none;
+}
+
+.compare-amount.active {
+  display: flex;
+}
+
+.header-bottom {
+  background: #2A2F30;
+}
+
+.header-bottom-row {
+  display: flex;
+}
+
+.catalog-dropdown-toggle {
+  background: #9BCB30;
+  padding: 18px 35px 18px 23px;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.catalog-dropdown-toggle .i-burger {
+  margin-right: 16px;
+}
+
+.catalog-dropdown-toggle:after {
+  content: '';
+  background: url("../img/icon/chevron-down.svg") no-repeat center/contain;
+  width: 12px;
+  height: 8px;
+  margin-left: 24px;
+  border: none;
+}
+
+.catalog-dropdown-toggle.show:after {
+  transform: rotate(180deg);
+}
+
+.catalog-dropdown-menu {
+  background: #FFF;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.header-catalog {
+  padding: 25px 25px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1070px;
+}
+
+.header-catalog-item {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 17px 25px;
+}
+
+.header-catalog-item-caption {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  margin-top: 20px;
+}
+
+.header-catalog-item-caption span {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.header-catalog-item-caption small {
+  display: block;
+  color: rgba(0, 0, 0, 0.50);
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 130%;
+  margin-left: 2px;
+  margin-top: -4px;
+}
+
+.header-nav {
+  display: flex;
+  margin-left: 50px;
+}
+
+.header-nav-item + .header-nav-item {
+  margin-left: 50px;
+}
+
+.header-nav-link {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+@import "media";

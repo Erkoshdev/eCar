@@ -1,0 +1,30 @@
+//large desktops
+@media (min-width: 1300px) and  (max-width: 1400px) {
+
+}
+
+//desktops
+@media (min-width: 1200px) and  (max-width: 1299px) {
+
+}
+
+//desktops
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+//tablets
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+//phones
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
+
+@media (hover: hover) {
+  .search-result-item:hover {
+    background: rgba(0, 0, 0, 0.10);
+  }
+}
