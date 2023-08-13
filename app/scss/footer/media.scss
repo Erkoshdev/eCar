@@ -10,19 +10,116 @@
 
 //desktops
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  .footer-top {
+    padding: 25px 0;
+  }
+  .footer-col:nth-of-type(2) {
+    margin-left: 40px;
+  }
+  .footer-catalog {
+    grid-column-gap: 50px;
+  }
 }
 
 //tablets
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .footer-main {
+    padding: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: none;
+  }
+  .footer-col:nth-of-type(1) {
+    width: 100%;
+    max-width: initial;
+    display: flex;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    margin-bottom: 35px;
+  }
+  .mobile-left .footer-col-title {
+    display: none;
+  }
+  .footer-link {
+    padding: 8px 0;
+  }
+  .mobile-right {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+  .social-nav {
+    margin-top: 15px;
+  }
+  .footer-col:nth-of-type(2) {
+    margin-left: 0;
+  }
+  .footer-catalog {
+    grid-column-gap: 70px;
+  }
+  .footer-bottom {
+    margin-top: 35px;
+    border-top: 1px solid rgba(255,255,255,.2);
+  }
 }
 
 //phones
 @media (min-width: 320px) and (max-width: 767px) {
-
+  .brands-slide {
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main {
+    display: block;
+    padding: 0 0 30px;
+  }
+  .footer-col:nth-of-type(1) {
+    max-width: initial;
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+  .mobile-left .footer-col-title {
+    display: none;
+  }
+  .footer-link {
+    padding: 8px 0;
+  }
+  .social-nav {
+    margin-top: 15px;
+  }
+  .footer-col:nth-of-type(2) {
+    margin-left: 0;
+    padding: 30px 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col:nth-of-type(2) .footer-col-title {
+    width: 100%;
+  }
+  .footer-nav-right {
+    margin-top: 0;
+    width: 50%;
+    margin-left: auto;
+  }
+  .footer-catalog {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  .footer-bottom {
+    display: block;
+    padding: 20px 0 25px;
+  }
+  .copyright {
+    margin-top: 20px;
+  }
 }
 
 @media (hover: hover) {
-
+  .footer-link:hover {
+    color: #fff;
+  }
+  .social-nav-link:hover {
+    background: #545555;
+  }
 }

@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 20;
 }
 
 .header-top {
@@ -297,6 +298,10 @@
 }
 
 .toggle-search {
+  display: none;
+}
+
+.mobile-dark-logo {
   display: none;
 }
 

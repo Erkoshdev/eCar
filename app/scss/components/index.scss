@@ -1,15 +1,85 @@
 //buttons
-.btn {
+.btn-custom {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  padding: 12px 30px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  min-height: 42px;
+}
+
+.btn-custom span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .btn i + span, .btn span + i, .btn svg + span, .btn span + svg {
   margin-left: 5px;
+}
+
+.btn-lg {
+  padding: 14px 30px;
+  min-height: 50px;
+}
+
+.btn-sm {
+  padding: 6px 16px;
+  min-height: 34px;
+}
+
+.btn-black {
+  background: #000;
+  border-color: #000;
+  color: #FFF;
+}
+
+.btn-outline-black {
+  background: transparent;
+  border-color: #000;
+  color: #000;
+}
+
+.btn-green {
+  background: #9BCB30;
+  border-color: #9BCB30;
+  color: #FFF;
+}
+
+
+//input
+.form-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  padding: 12px 14px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  border: none;
+}
+
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.20);
 }
