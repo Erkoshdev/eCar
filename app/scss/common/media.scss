@@ -13,6 +13,12 @@
     padding-right: 190px;
     background-size: 310px;
   }
+  .sidebar {
+    width: 270px;
+  }
+  .page-row {
+    grid-column-gap: 30px;
+  }
 }
 
 //desktops
@@ -47,6 +53,21 @@
   }
   .instruction-item:nth-of-type(3) + .instruction-item:nth-of-type(4):before {
     content: none;
+  }
+  .page-row .sidebar {
+    display: none;
+  }
+  .main:not(.main-page) {
+    padding: 35px 0 60px;
+  }
+  .brand-dropdown {
+    display: block;
+  }
+  .sort-dropdown {
+    margin-left: auto;
+  }
+  .toggle-view {
+    margin-left: 16px;
   }
 }
 
@@ -114,6 +135,36 @@
   }
   .instruction-item:nth-of-type(3) + .instruction-item:nth-of-type(4):before {
     content: none;
+  }
+  .page-row .sidebar {
+    display: none;
+  }
+  .main:not(.main-page) {
+    padding: 35px 0 60px;
+  }
+  .brand-dropdown {
+    display: block;
+  }
+  .sort-dropdown {
+    margin-left: auto;
+  }
+  .toggle-view {
+    margin-left: 16px;
+  }
+  .product-card-wrapper.list-view .product-card-media {
+    padding: 10px 17px 10px 12px;
+  }
+  .product-card-wrapper.list-view .product-card-caption {
+    padding: 19px 16px;
+  }
+  .product-card-wrapper.list-view .product-card-bottom .btn-custom {
+    width: 115px;
+  }
+  .product-card-wrapper.three-col .product-card {
+    width: calc(50% - 20px);
+  }
+  .product-card-wrapper.list-view .product-card {
+    width: calc(100% - 20px);
   }
 }
 
@@ -215,6 +266,54 @@
   }
   .instruction-item:nth-of-type(5), .instruction-item:nth-of-type(6) {
     margin-bottom: 0;
+  }
+  .main:not(.main-page) {
+    padding: 24px 0 76px;
+  }
+  .page-row .sidebar {
+    display: none;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .page-header .breadcrumb {
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .page-header .section-title {
+    order: 2;
+  }
+  .section-filter-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .brand-dropdown {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .custom-dropdown-toggle {
+    width: 100%;
+  }
+  .sort-dropdown {
+    flex: 1;
+  }
+  .toggle-view {
+    display: none;
+  }
+  .product-card-wrapper.three-col .product-card {
+    width: calc(100% - 20px);
+  }
+  .pagination {
+    display: none;
+  }
+  .catalog-show-more {
+    display: flex;
+    margin: 32px auto 0;
+    min-width: 145px;
   }
 }
 

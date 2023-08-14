@@ -159,3 +159,74 @@ input[type=number] {
 .checkbox-container + .checkbox-container {
   margin-top: 16px;
 }
+
+//breadcrumb
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.breadcrumb-item {
+  position: relative;
+  color: rgba(0, 0, 0, 0.40);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.breadcrumb-link {
+  color: #000;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 16px;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+  content: '|';
+  color: #000;
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-right: 16px;
+}
+
+//pagination
+.pagination {
+  display: flex;
+  width: fit-content;
+  grid-gap: 8px;
+  margin: 32px 0 0 auto;
+}
+
+.pagination-link {
+  display: flex;
+  padding: 5px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 41px;
+  height: 33px;
+}
+
+.pagination-link.active {
+  background: #9BCB30;
+  border-color: #9BCB30;
+}
+
+.pagination-dots {
+  border: none;
+}
