@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-CAR-CN</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-row">
+          <a href="/" class="header-logo">
+            <img src="img/logo/logo.svg" alt="">
+            <img class="mobile-dark-logo" src="img/logo/logo-dark.svg" alt="">
+          </a>
+          <button class="btn-plain toggle-search">
+            <i class="icon i-loup"></i>
+          </button>
+          <div class="search-container">
+            <div class="search-form">
+              <input id="searchForm" type="text" placeholder="Что ищем?" autocomplete="off">
+              <button class="search-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1209_4234)">
+                    <path d="M17.8295 17.0207L13.1821 12.4477C14.3991 11.1255 15.1469 9.37682 15.1469 7.45261C15.1463 3.33639 11.7559 0 7.57327 0C3.39066 0 0.000244141 3.33639 0.000244141 7.45261C0.000244141 11.5688 3.39066 14.9052 7.57327 14.9052C9.38044 14.9052 11.0379 14.2801 12.3399 13.241L17.0052 17.832C17.2326 18.056 17.6016 18.056 17.8289 17.832C17.883 17.7792 17.926 17.7162 17.9553 17.6465C17.9847 17.5769 17.9998 17.5021 17.9999 17.4265C17.9999 17.3509 17.9849 17.2761 17.9556 17.2064C17.9263 17.1367 17.8835 17.0736 17.8295 17.0207ZM7.57327 13.7586C4.03433 13.7586 1.16546 10.9353 1.16546 7.45261C1.16546 3.96991 4.03433 1.14663 7.57327 1.14663C11.1122 1.14663 13.9811 3.96991 13.9811 7.45261C13.9811 10.9353 11.1122 13.7586 7.57327 13.7586Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1209_4234">
+                      <rect width="18" height="18" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="search-btn-text">Найти</span>
+              </button>
+              <button class="close-search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 8L16 16" stroke="#2C2D2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 8L8 16" stroke="#2C2D2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="search-result">
+              <a href="#" class="search-result-item">Родстер</a>
+              <a href="#" class="search-result-item">Родственник</a>
+              <a href="#" class="search-result-item">Родители</a>
+              <a href="#" class="search-result-item">Родина</a>
+            </div>
+          </div>
+          <div class="header-tools">
+            <div class="header-tools-col">
+              <div class="header-tools-item">
+                <i class="icon i-pin"></i>
+                <span class="header-tools-text">Алматы,Жандосова 39/3</span>
+              </div>
+              <div class="header-tools-item">
+                <i class="icon i-pin"></i>
+                <span class="header-tools-text">Шымкент, ул.Сарбаздар 10А</span>
+              </div>
+            </div>
+            <div class="header-tools-col">
+              <div class="header-tools-item">
+                <i class="icon i-clock"></i>
+                <span class="header-tools-text">Без выходных</span>
+              </div>
+              <div class="header-tools-item">
+                <span class="header-tools-text">10:00-19:00</span>
+              </div>
+            </div>
+            <div class="header-tools-col visible-mobile">
+              <a href="#" class="header-tools-item bold">
+                <i class="icon i-chart"></i>
+                <span class="header-tools-text">Cравнение</span>
+                <!--класс 'active' показывает compare-amount-->
+                <span class="compare-amount active">2</span>
+              </a>
+              <a href="#" class="header-tools-item bold">
+                <i class="icon i-heart"></i>
+                <span class="header-tools-text">Избранное</span>
+              </a>
+            </div>
+          </div>
+          <a href="#" class="menu-toggle">
+            <div class="menu-toggle-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="menu-toggle-text">меню</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-row">
+          <div class="dropdown catalog-dropdown">
+            <button class="dropdown-toggle catalog-dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="icon i-burger"></i>
+              <span class="mobile-menu-number">01</span>
+              Каталог машин
+            </button>
+            <div class="dropdown-menu catalog-dropdown-menu">
+              <div class="header-catalog">
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/sedan.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Седан</span>
+                    <small>32</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/hetchbek.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Хэтчбек</span>
+                    <small>3</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/kupe.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Купе</span>
+                    <small>21</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/cabrio.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Кабриолет</span>
+                    <small>11</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/vnedorozhnik.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Внедорожник</span>
+                    <small>8</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/furgon.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Фургон</span>
+                    <small>2</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/pikap.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Пикап</span>
+                    <small>1</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/rodster.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Родстер</span>
+                    <small>8</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/universal.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Универсал</span>
+                    <small>2</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/krossover.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Кроссовер</span>
+                    <small>34</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/liftbek.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Лифтбек</span>
+                    <small>4</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/miniven.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Минивен</span>
+                    <small>7</small>
+                  </div>
+                </a>
+                <a href="#" class="header-catalog-item">
+                  <img src="img/main/targa.svg" alt="">
+                  <div class="header-catalog-item-caption">
+                    <span>Тарга</span>
+                    <small>2</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul class="header-nav">
+            <li class="header-nav-item">
+              <a href="#" class="header-nav-link">
+                <span class="mobile-menu-number">01</span>
+                О компании
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#" class="header-nav-link">
+                <span class="mobile-menu-number">01</span>
+                Конструктор машин
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#" class="header-nav-link">
+                <span class="mobile-menu-number">01</span>
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="page-row">
+        <div class="sidebar">
+          <ul class="sidebar-catalog">
+            <li>
+              <a href="#">Седан</a>
+            </li>
+            <li>
+              <a href="#">Хэтчбек</a>
+            </li>
+            <li>
+              <a href="#">Универсал</a>
+            </li>
+            <li>
+              <a href="#">Лифтбэк</a>
+            </li>
+            <li>
+              <a href="#">Купе</a>
+            </li>
+            <li>
+              <a href="#">Кабриолет</a>
+            </li>
+            <li>
+              <a href="#">Родстер</a>
+            </li>
+            <li>
+              <a href="#">Стретч</a>
+            </li>
+            <li>
+              <a href="#">Тарга</a>
+            </li>
+            <li>
+              <a href="#">Внедорожник</a>
+            </li>
+            <li>
+              <a href="#">Кроссовер</a>
+            </li>
+            <li>
+              <a href="#">Стретч</a>
+            </li>
+            <li>
+              <a href="#">Пикап</a>
+            </li>
+            <li>
+              <a href="#">Фургон</a>
+            </li>
+            <li>
+              <a href="#">Минивэн</a>
+            </li>
+          </ul>
+          <div class="sidebar-filter">
+            <div class="sidebar-filter-title">Фильтр</div>
+            <div class="sidebar-filter-item">
+              <b>Цвет</b>
+              <div class="filter-color">
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #015FC7"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #AB55CA"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #353535"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #FFD600"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #DDDDDD"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.10)"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #00B212"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #60CFFF"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #CAE9A2"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #BCE7FF"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #FF7A00"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #64E300"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #FF007A"></span>
+                  </div>
+                </div>
+                <div class="filter-color-item">
+                  <input type="checkbox" name="filterColor">
+                  <div class="filter-color-checkmark">
+                    <span style="background: #737D83"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-filter-item">
+              <b>Бренд</b>
+              <div class="filter-brand">
+                <div class="filter-brand-sm">
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Все</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">BYD</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Zeekr</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">IM</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Honda</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Tesla</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">BMW</span>
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="filter-brand-lg">
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">BYD</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Zeekr</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">IM</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Honda</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">Tesla</span>
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkbox-container-text">BMW</span>
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <button class="btn-plain toggle-filter-brand">посмотреть все</button>
+              </div>
+            </div>
+            <div class="sidebar-filter-item">
+              <b>Мощность электромотора</b>
+              <div class="filter-power-slider">
+                <div class="" id="powerRange"></div>
+              </div>
+              <div class="filter-power-form">
+                <div class="form-container">
+                  <input type="number" placeholder="От" id="minValue" min="0" max="300">
+                </div>
+                <small>-</small>
+                <div class="form-container">
+                  <input type="number" placeholder="До" id="maxValue" min="0" max="300">
+                </div>
+                <span>kW</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="section-header">
+            <h2 class="section-title">Каталог</h2>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="breadcrumb-link">Главная</a>
+              </li>
+              <li class="breadcrumb-item">Каталог</li>
+            </ul>
+          </div>
+          <div class="section-filter-wrapper">
+            <div class="dropdown sort-dropdown">
+              <button class="dropdown-toggle sort-dropdown-toggle" data-bs-toggle="dropdown">Начиная с популярных</button>
+              <ul class="dropdown-menu sort-dropdown-menu">
+                <li>
+                  <a class="dropdown-item sort-dropdown-item" href="#">sort1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item sort-dropdown-item" href="#">sort2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item sort-dropdown-item" href="#">sort3</a>
+                </li>
+              </ul>
+            </div>
+            <div class="toggle-view">
+              <a href="#" class="toggle-view-item grid-view">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              <a href="#" class="toggle-view-item list-view">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="swiper brands-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/byd.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/avatr.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/aito.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/hiphi.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/xpeng.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/u.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/zeekr.png" alt="">
+            </div>
+            <div class="swiper-slide brands-slide">
+              <img src="img/main/tesla.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev brands-slide-prev"></div>
+        <div class="swiper-button-next brands-slide-next"></div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-col">
+          <div class="mobile-left">
+            <b class="footer-col-title">Контактная информация</b>
+            <p class="footer-link">
+              <i class="icon i-pin-green"></i>
+              г. Алматы, ул. Жандосова 39/3
+            </p>
+            <p class="footer-link">
+              <i class="icon i-pin-green"></i>
+              г. Шымкент ул. Сарбадзар 10А
+            </p>
+          </div>
+          <div class="mobile-right">
+            <a class="footer-link" href="mailto:e-car-cn@mail.ru">
+              <i class="icon i-email-green"></i>
+              e-car-cn@mail.ru
+            </a>
+            <ul class="social-nav">
+              <li class="social-nav-item">
+                <a class="social-nav-link" href="#">
+                  <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.48385 15.0038C9.48258 14.7741 10.4442 14.3747 11.3293 13.8131C11.9992 13.3862 12.2019 12.4926 11.7792 11.8136C11.3564 11.1346 10.4714 10.9299 9.79901 11.3568C7.79166 12.6324 5.20832 12.6299 3.20098 11.3568C2.52859 10.9299 1.64355 11.1346 1.22082 11.8136C0.798095 12.4901 1.00081 13.3862 1.67075 13.8131C2.55576 14.3747 3.5174 14.7741 4.51613 15.0038L1.77952 17.7696C1.21838 18.3363 1.21838 19.2524 1.77952 19.819C2.06134 20.1011 2.42721 20.2434 2.79308 20.2434C3.16142 20.2434 3.52729 20.1011 3.80914 19.819L6.50123 17.1006L9.19334 19.819C9.75451 20.3857 10.6618 20.3857 11.2229 19.819C11.7841 19.2524 11.7841 18.3338 11.2229 17.7696L8.48385 15.0038ZM6.50123 3.9729C7.62111 3.9729 8.53085 4.89152 8.53085 6.02231C8.53085 7.15062 7.62111 8.06924 6.50123 8.06924C5.38386 8.06924 4.47163 7.15062 4.47163 6.02231C4.47163 4.89152 5.38386 3.9729 6.50123 3.9729ZM8.48385 10.7199C10.495 9.54107 11.3293 8.06924 11.3293 6.01982C11.3293 3.15069 9.20326 1.07227 6.50123 1.07227C3.79922 1.07227 1.60155 3.29143 1.60155 6.01982C1.60155 8.74821 3.79922 10.9674 6.50123 10.9674L8.48385 10.7199Z" stroke="white" stroke-opacity="0.5"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-nav-item">
+                <a class="social-nav-link" href="#">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3446 0.785756L1.41547 7.47742C0.568897 7.83306 0.609042 9.04604 1.47728 9.34492L4.62863 10.4297C4.92641 10.5323 5.25508 10.4885 5.51567 10.3116L12.5393 5.54508C13.0418 5.20407 13.6033 5.88512 13.1727 6.31333L8.68445 10.7767C8.23505 11.2237 8.30946 11.9706 8.83821 12.32L14.9917 16.3871C15.5986 16.7883 16.4172 16.4277 16.5308 15.709L18.7196 1.86386C18.842 1.08988 18.067 0.482267 17.3446 0.785756Z" stroke="white" stroke-opacity="0.5" stroke-linecap="round"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-nav-item">
+                <a class="social-nav-link" href="#">
+                  <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.04783 1.08105C4.44348 1.08105 3.11304 2.49871 3.11304 4.20825V7.46052L1 7.50222V10.7545L3.11304 10.7128V21.2619H6.75217V10.7128H9.68696L10 7.46052H6.75217C6.75217 6.75169 6.75217 5.95947 6.75217 5.20895C6.75217 4.7086 7.10435 4.33333 7.57391 4.33333H10V1.08105H6.04783Z" stroke="white" stroke-opacity="0.5"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-nav-item">
+                <a class="social-nav-link" href="#">
+                  <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 3.00094C21 3.00094 20.033 3.60774 18.9341 3.40547C18.9341 3.40547 20.4725 2.51549 20.5604 1.09961C19.989 2.5964 18.011 2.43458 18.011 2.43458C16.9121 1.18052 15.2857 1.18052 14.6703 1.22097C13.7912 1.26142 10.5385 1.58505 10.8901 6.19679C10.8901 6.19679 4.95604 6.11588 1.96703 1.82778C1 4.86181 3.46154 6.8845 3.46154 6.8845C2.27473 7.12722 1.43956 6.43951 1.43956 6.43951C2.05495 9.5949 5.13187 10.2422 5.13187 10.2422C4.03297 10.8085 2.67033 10.404 2.67033 10.404C3.72527 12.8717 7.06593 13.0335 7.06593 13.0335C5.13187 15.1371 1 15.1371 1 15.1371C4.6044 17.0789 19.0659 17.7261 19.0659 5.8327C19.0659 5.46862 19.022 5.14499 18.978 4.82136V4.86181C19.022 4.90226 20.5165 4.33591 21 3.00094Z" stroke="white" stroke-opacity="0.5"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-nav-item">
+                <a class="social-nav-link" href="#">
+                  <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1908 1.96216L18.1907 1.96217L18.1917 1.97075C18.5953 5.43442 18.5959 8.89954 18.2331 12.3669C18.1354 12.9977 17.6836 13.4303 17.1517 13.4572L17.1517 13.4571L17.1407 13.4579C12.0612 13.8271 6.98187 13.8273 1.90242 13.4584C1.31239 13.396 0.860708 12.9545 0.803932 12.3812L0.804006 12.3812L0.803006 12.3726C0.398998 8.90519 0.398998 5.43817 0.803006 1.97075L0.80308 1.97076L0.803932 1.96216C0.863724 1.35844 1.33864 0.912973 1.84431 0.886101L1.84431 0.886195L1.85403 0.885489C6.93347 0.516218 12.0128 0.516035 17.0923 0.884941C17.6823 0.947375 18.134 1.38889 18.1908 1.96216ZM12.7713 7.54218L12.7977 7.52684L12.822 7.50842C13.0294 7.35134 13.1427 7.11056 13.1427 6.87265C13.1427 6.65048 13.0285 6.35779 12.7281 6.23994L8.17515 3.59553C7.93744 3.43317 7.6437 3.42744 7.40927 3.5627C7.17489 3.69793 7.0366 3.95042 7.0366 4.22263V9.58454C7.0366 9.88317 7.21845 10.1034 7.40927 10.2135C7.60432 10.3261 7.8756 10.3653 8.12958 10.2371L8.14268 10.2305L8.15536 10.2231L12.7713 7.54218ZM12.3963 7.18177L12.3978 7.18215L12.3963 7.18177Z" stroke="white" stroke-opacity="0.5"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-nav-item">
+                <a class="social-nav-link" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1083 19.6244H5.26002C2.36497 19.6244 0 17.2381 0 14.3169V5.38863C0 2.46741 2.36497 0.0810547 5.26002 0.0810547H14.1083C17.0033 0.0810547 19.3683 2.46741 19.3683 5.38863V14.3169C19.3683 17.2381 17.0033 19.6244 14.1083 19.6244ZM5.26002 1.06851C2.89505 1.06851 0.978608 3.00228 0.978608 5.38863V14.3169C0.978608 16.7032 2.89505 18.637 5.26002 18.637H14.1083C16.4732 18.637 18.3897 16.7032 18.3897 14.3169V5.38863C18.3897 3.00228 16.4732 1.06851 14.1083 1.06851H5.26002Z" fill="white" fill-opacity="0.5"/>
+                    <path d="M9.70443 15.9215C6.36085 15.9215 3.66968 13.206 3.66968 9.87337C3.66968 6.49956 6.36085 3.78406 9.70443 3.78406C13.0072 3.78406 15.6984 6.49956 15.6984 9.83222C15.6984 13.206 13.0072 15.9215 9.70443 15.9215ZM9.70443 4.77151C6.93171 4.77151 4.68906 7.03443 4.68906 9.83222C4.68906 12.63 6.93171 14.8929 9.70443 14.8929C12.4772 14.8929 14.7198 12.63 14.7198 9.83222C14.7198 7.07558 12.4772 4.77151 9.70443 4.77151Z" fill="white" fill-opacity="0.5"/>
+                    <path d="M16.5549 4.07204C16.5549 4.56577 16.1471 4.9772 15.6578 4.9772C15.1685 4.9772 14.7607 4.56577 14.7607 4.07204C14.7607 3.57831 15.1685 3.16687 15.6578 3.16687C16.1471 3.16687 16.5549 3.57831 16.5549 4.07204Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <b class="footer-col-title">Сайт</b>
+          <div class="footer-nav-left">
+            <a href="#" class="footer-link">О компании</a>
+            <a href="#" class="footer-link">Услуги</a>
+          </div>
+          <div class="footer-nav-right">
+            <a href="#" class="footer-link">Конструктор машин</a>
+            <a href="#" class="footer-link">Контакты</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <b class="footer-col-title">Каталог</b>
+          <div class="footer-catalog">
+            <a href="#" class="footer-link">BYD</a>
+            <a href="#" class="footer-link">NIO</a>
+            <a href="#" class="footer-link">Aito</a>
+            <a href="#" class="footer-link">Honda</a>
+            <a href="#" class="footer-link">Tesla</a>
+            <a href="#" class="footer-link">Marvel</a>
+            <a href="#" class="footer-link">Lotus</a>
+            <a href="#" class="footer-link">Voyah</a>
+            <a href="#" class="footer-link">BMW</a>
+            <a href="#" class="footer-link">Ola</a>
+            <a href="#" class="footer-link">Audi</a>
+            <a href="#" class="footer-link">HiPhi</a>
+            <a href="#" class="footer-link">Toyota</a>
+            <a href="#" class="footer-link">KIA</a>
+            <a href="#" class="footer-link">NIO</a>
+            <a href="#" class="footer-link">Zeekr</a>
+            <a href="#" class="footer-link">Cadillac</a>
+            <a href="#" class="footer-link">Mazda</a>
+            <a href="#" class="footer-link">XPeng</a>
+            <a href="#" class="footer-link">Avatr</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="#" class="dev-link">
+          <span>Разработка сайта</span>
+          <img src="img/logo/logo-gray.png" alt="">
+        </a>
+        <p class="copyright">© 2023 E-Car-CN.com — все права защищены</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //range slider
+  let slider = document.getElementById('powerRange');
+  noUiSlider.create(slider, {
+    start: [0, 300],
+    connect: true,
+    range: {
+      'min': 0,
+      'max': 300
+    }
+  });
+  let minValue = document.getElementById('minValue')
+  let maxValue = document.getElementById('maxValue')
+  slider.noUiSlider.on('update', function (values, handle) {
+    let value = values[handle];
+    if (handle) {
+      maxValue.value = Math.round(value);
+    } else {
+      minValue.value = Math.round(value);
+    }
+  });
+  minValue.addEventListener('change', function () {
+    slider.noUiSlider.set([this.value, null]);
+  });
+  maxValue.addEventListener('change', function () {
+    slider.noUiSlider.set([null, this.value]);
+  });
+</script>
+</body>
+</html>

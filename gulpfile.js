@@ -44,6 +44,7 @@ function libsJs() {
     'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
     'node_modules/swiper/swiper-bundle.js',
     'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
+    'node_modules/nouislider/dist/nouislider.min.js',
   ])
       .pipe(concat('libs.min.js'))
       .pipe(dest('app/js'))
@@ -52,7 +53,8 @@ function libsJs() {
 function libsCss() {
   return src([
     'node_modules/bootstrap/dist/css/bootstrap.css',
-    'node_modules/swiper/swiper-bundle.css'
+    'node_modules/swiper/swiper-bundle.css',
+    'node_modules/nouislider/dist/nouislider.min.css',
   ])
       .pipe(concat('libs.min.css'))
       .pipe(dest('app/css'))

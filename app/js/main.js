@@ -59,3 +59,16 @@ $('.img-select-item').click(function (e) {
   wrapper.find($('.img-select-item')).removeClass('active');
   $(this).addClass('active');
 })
+
+//toggle filter brand list
+$('.toggle-filter-brand').click(function () {
+  $(this).toggleClass('active');
+  if($(this).hasClass('active')) {
+    $(this).html('скрыть')
+    $(this).prev('.filter-brand-lg').slideDown(400)
+  } else {
+    $(this).html('посмотреть все')
+    $(this).prev('.filter-brand-lg').slideUp(400)
+  }
+
+})

@@ -5,22 +5,217 @@
 
 //desktops
 @media (min-width: 1200px) and  (max-width: 1299px) {
-
+  .page-promo.light {
+    padding-right: 215px;
+    background-size: 280px;
+  }
+  .page-promo.dark {
+    padding-right: 190px;
+    background-size: 310px;
+  }
 }
 
 //desktops
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  .intro-slider .intro-slide {
+    height: 375px;
+  }
+  .intro-slider-pagination {
+    bottom: 20px!important;
+  }
+  .feedback-container {
+    padding: 30px;
+  }
+  .page-promo.light {
+    padding-right: 100px;
+    background-size: 250px;
+    background-position: right bottom;
+  }
+  .page-promo.dark {
+    padding-right: 100px;
+    background-size: 300px;
+    background-position: right bottom;
+  }
+  .instruction-list {
+    flex-wrap: wrap;
+  }
+  .instruction-item {
+    width: calc(33.3% - 60px);
+  }
+  .instruction-item:nth-of-type(4), .instruction-item:nth-of-type(5), .instruction-item:nth-of-type(6) {
+    margin-top: 50px;
+  }
+  .instruction-item:nth-of-type(3) + .instruction-item:nth-of-type(4):before {
+    content: none;
+  }
 }
 
 //tablets
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .intro-row {
+    display: block;
+  }
+  .intro-slider {
+    width: 100%;
+  }
+  .intro-slider .intro-slide {
+    height: 370px;
+  }
+  .feedback-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 24px 18px;
+  }
+  .feedback-container hr {
+    display: none;
+  }
+  .feedback-container b {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .feedback-container p {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .feedback-container-form {
+    display: flex;
+    column-gap: 7px;
+  }
+  .feedback-container-form .form-container {
+    flex: 1;
+    min-height: 50px;
+  }
+  .page-promos-pagination {
+    position: static;
+    margin-top: 10px;
+  }
+  .page-promos-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    opacity: 1;
+    margin: 0 4px!important;
+  }
+  .page-promos-pagination .swiper-pagination-bullet-active {
+    background: #9BCB30;
+  }
+  .home-catalog-slider .product-card {
+    width: 320px;
+  }
+  .instruction-list {
+    flex-wrap: wrap;
+  }
+  .instruction-item {
+    width: calc(33.3% - 50px);
+  }
+  .instruction-item:nth-of-type(4), .instruction-item:nth-of-type(5), .instruction-item:nth-of-type(6) {
+    margin-top: 50px;
+  }
+  .instruction-item:nth-of-type(3) + .instruction-item:nth-of-type(4):before {
+    content: none;
+  }
 }
 
 //phones
 @media (min-width: 320px) and (max-width: 767px) {
-
+  .intro-row {
+    display: block;
+  }
+  .intro-slider {
+    width: 100%;
+  }
+  .intro-slider .intro-slide {
+    height: 225px;
+  }
+  .intro-slider-prev, .intro-slider-next {
+    display: none;
+  }
+  .feedback-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 24px 18px;
+  }
+  .feedback-container hr {
+    display: none;
+  }
+  .feedback-container b, .feedback-container p {
+    text-align: center;
+  }
+  .feedback-container-form .btn-custom {
+    margin: 0 auto;
+  }
+  .page-promos {
+    display: flex;
+    grid-column-gap: initial;
+  }
+  .page-promo.dark, .page-promo.light {
+    padding: 23px 22px 32px;
+    background-image: none;
+  }
+  .page-promo-img {
+    display: block;
+    height: 165px;
+    width: 100%;
+  }
+  .page-promo-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .page-promo h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .page-promo p {
+    font-size: 14px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .page-promo .btn-custom {
+    margin: 0 auto;
+  }
+  .page-promos-pagination {
+    position: static;
+    margin-top: 10px;
+  }
+  .page-promos-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    opacity: 1;
+    margin: 0 4px!important;
+  }
+  .page-promos-pagination .swiper-pagination-bullet-active {
+    background: #9BCB30;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+  .home-catalog .inline-navigation {
+    display: none;
+  }
+  .instruction {
+    padding: 0;
+    border: none;
+    margin-top: 60px;
+  }
+  .instruction-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .instruction-item {
+    width: calc(50% - 8px);
+    margin-bottom: 40px;
+  }
+  .instruction-item:before {
+    content: none!important;
+  }
+  .instruction-item:nth-of-type(5), .instruction-item:nth-of-type(6) {
+    margin-bottom: 0;
+  }
 }
 
 @media (hover: hover) {

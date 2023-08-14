@@ -262,33 +262,44 @@
             <hr>
             <b>Нужна консультация?</b>
             <p>Напишите Ваши контактные данные и наш эксперт проконсультирует вас!</p>
-            <div class="form-container">
-              <input type="text" placeholder="Ф. И. О.">
+            <div class="feedback-container-form">
+              <div class="form-container">
+                <input type="text" placeholder="Ф. И. О.">
+              </div>
+              <div class="form-container">
+                <input class="phone-mask" type="text" placeholder="Номер телефона">
+              </div>
+              <button class="btn-custom btn-lg btn-black">Заказать консультацию</button>
             </div>
-            <div class="form-container">
-              <input class="phone-mask" type="text" placeholder="Номер телефона">
-            </div>
-            <button class="btn-custom btn-lg btn-black">Заказать консультацию</button>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="page-promos">
-        <div class="page-promo light">
-          <h2>Конструктор автомобиля</h2>
-          <p>Подбери автомобиль по параметрам, <br>которые тебе нужны</p>
-          <a class="btn-custom btn-green" href="configurator.html">Подобрать автомобиль</a>
+      <div class="swiper page-promos-swiper">
+        <div class="page-promos swiper-wrapper">
+          <div class="page-promo light swiper-slide">
+            <div class="page-promo-img">
+              <img src="img/main/page-promo-1.png" alt="">
+            </div>
+            <h2>Конструктор автомобиля</h2>
+            <p>Подбери автомобиль по параметрам, <br>которые тебе нужны</p>
+            <a class="btn-custom btn-green" href="configurator.html">Подобрать автомобиль</a>
+          </div>
+          <div class="page-promo dark swiper-slide">
+            <div class="page-promo-img">
+              <img src="img/main/page-promo-2.png" alt="">
+            </div>
+            <h2>Премиальные кроссоверы</h2>
+            <p>Более 20-ти типов премиальных <br>кроссоверов из Китая</p>
+            <a class="btn-custom btn-green" href="catalog.html">Посмотреть каталог</a>
+          </div>
         </div>
-        <div class="page-promo dark">
-          <h2>Премиальные кроссоверы</h2>
-          <p>Более 20-ти типов премиальных <br>кроссоверов из Китая</p>
-          <a class="btn-custom btn-green" href="catalog.html">Посмотреть каталог</a>
-        </div>
+        <div class="swiper-pagination page-promos-pagination"></div>
       </div>
       <div class="home-catalog">
         <div class="section-header">
-          <h3 class="section-title">Каталог автомобилей</h3>
+          <h2 class="section-title">Каталог автомобилей</h2>
           <div class="inline-navigation">
             <button class="inline-navigation-btn inline-navigation-prev">
               <i class="icon i-chevron-left"></i>
@@ -929,7 +940,7 @@
 
   //catalog slider
   const catalogSwiper = new Swiper(".home-catalog-slider", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
       el: ".home-catalog-pagination",
@@ -938,11 +949,37 @@
     navigation: {
       prevEl: '.inline-navigation-prev',
       nextEl: '.inline-navigation-next',
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 'auto',
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
     }
   });
 
-
-
+  $(document).ready(function () {
+    if(window.innerWidth < 992) {
+      const promoSwiper = new Swiper('.page-promos-swiper', {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+        },
+        speed: 600,
+        pagination: {
+          el: '.page-promos-pagination',
+          clickable: true,
+        },
+      });
+    }
+  })
 </script>
 </body>
 </html>
