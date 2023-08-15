@@ -96,6 +96,28 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+//textarea
+.form-container textarea {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  border: none;
+  resize: none;
+}
+
+.form-container textarea:focus {
+  outline: none;
+}
+
+.form-container textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.20);
+}
+
 
 //checkbox container
 .checkbox-container {

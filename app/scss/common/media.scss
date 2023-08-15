@@ -533,6 +533,14 @@
   .toggle-product-table {
     margin-top: 10px;
   }
+  .contacts-row {
+    margin-top: 32px;
+    display: block;
+  }
+  .contacts-col:first-child {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 
 @media (hover: hover) {
