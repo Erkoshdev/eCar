@@ -105,7 +105,6 @@
     width: 300px;
     display: block;
     top: 18px;
-    right: 145px;
     padding: 15px 15px 30px;
     box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2);
     opacity: 0;
@@ -207,15 +206,11 @@
   .header-logo img {
     max-width: 130px;
   }
-  .menu-toggle-text {
-    display: none;
-  }
   .search-form {
-    width: 300px;
+    width: 325px;
   }
   .header-bottom-row {
     top: 20px;
-    right: 90px;
   }
 }
 
@@ -230,6 +225,9 @@
   }
   .header-row {
     padding: 22px 0;
+  }
+  .menu-toggle-text {
+    display: none;
   }
   .menu-open {
     .header-top {

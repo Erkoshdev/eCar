@@ -17,6 +17,13 @@ $('.menu-toggle').click(function () {
   if(window.innerWidth < 768) {
     $('body').toggleClass('scroll-locked')
   }
+  if(window.innerWidth > 767 && window.innerWidth < 1200) {
+    const btnLeftPosition = $('.menu-toggle').offset().left
+    console.log(btnLeftPosition)
+    mobileMenu.css({
+      'left': `${btnLeftPosition - 315}px`
+    })
+  }
 })
 
 //toggle search on mobile
