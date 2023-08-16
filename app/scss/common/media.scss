@@ -516,12 +516,14 @@
   }
   .product-container-tools {
     grid-column-gap: 3px;
+    width: 100%;
+    justify-content: space-between;
   }
   .product-container-tool-link {
     width: 169px;
   }
   .product-container-caption .btn-green {
-    width: 326px;
+    width: 100%;
   }
   .product-table th {
     &:nth-of-type(1) {
@@ -569,6 +571,9 @@
   }
   .product-table table {
     width: max-content;
+  }
+  .card-page .home-catalog .section-title {
+    margin: 0;
   }
   .article {
     max-width: 100%;
