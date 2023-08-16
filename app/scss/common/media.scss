@@ -616,7 +616,80 @@
     flex-wrap: nowrap;
     overflow-x: auto;
   }
+
+  .not-found-subtitle span {
+    font-size: 140px;
+  }
+  .wheel-img img {
+    width: 108px;
+    height: 108px;
+  }
+  .not-found-subtitle span:after {
+    width: 73px;
+    height: 7px;
+    bottom: 31px;
+  }
+  .not-found-subtitle span:first-child:after {
+    left: 9px;
+  }
+  .wheel-img:after {
+    width: 73px;
+    height: 7px;
+    bottom: -6px;
+  }
+  .not-found-container:before {
+    width: 230px;
+    height: 114px;
+    left: -14px;
+    bottom: 46px;
+  }
+  .not-found-container:after {
+    width: 61px;
+    height: 83px;
+    right: -44px;
+    bottom: 46px;
+  }
+  .not-found-caption {
+    margin-top: 0;
+  }
+  .not-found-caption b {
+    font-size: 18px;
+  }
+  .not-found-caption p {
+    margin: 24px auto 0;
+    font-size: 14px;
+    max-width: 270px;
+  }
+
+  .not-found-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+  }
+  .not-found-nav li {
+    width: fit-content;
+  }
+  .not-found-nav a {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .not-found-copyright {
+    bottom: 37px;
+  }
+  .not-found-page:before {
+    top: 23px;
+    left: -17px;
+  }
+  .not-found-page:after {
+    top: 96px;
+    right: -58px;
+  }
 }
+
+
+
+
 
 @media (hover: hover) {
 
