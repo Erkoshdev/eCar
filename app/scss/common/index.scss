@@ -1696,6 +1696,587 @@
   text-align: center;
 }
 
+//constructor
+.constructor-page {
+  padding: 24px 0 172px;
+  position: relative;
+}
+
+.constructor-navigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 368px;
+  height: 100%;
+  flex-shrink: 0;
+  background: #FFF;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  padding: 154px 0 0 29px;
+  transition: 0.2s ease;
+  transform: translateX(-100%);
+}
+
+.constructor-navigation.show {
+  transform: translateX(0);
+}
+
+.constructor-navigation-link {
+  width: 100%;
+  display: flex;
+  padding: 11px 17px 10px;
+}
+
+.constructor-navigation-link.active {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.constructor-navigation-link span {
+  color: var(--black-color-20, rgba(0, 0, 0, 0.20));
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  text-transform: uppercase;
+  width: 25px;
+  display: block;
+}
+
+.constructor-navigation-link p {
+  margin-left: 11px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  text-transform: uppercase;
+}
+
+.constructor-header {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.toggle-constructor-navigation {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  z-index: 5;
+}
+
+.toggle-constructor-navigation span {
+  width: 35px;
+  height: 3px;
+  display: block;
+  background: #000;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.toggle-constructor-navigation span + span {
+  margin-top: 8px;
+}
+
+.toggle-constructor-navigation.active span {
+  &:nth-of-type(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  &:nth-of-type(2) {
+    opacity: 0;
+  }
+  &:nth-of-type(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+}
+
+.car-logo {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.car-logo img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.car-logo span {
+  display: block;
+  margin-left: 13px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.share-container {
+  position: relative;
+  margin-left: auto;
+  height: fit-content;
+}
+
+.toggle-share-list {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  padding: 11px 15px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  height: 48px;
+  transition: 0.2s ease;
+}
+
+.toggle-share-list span {
+  display: block;
+  margin-left: 16px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.toggle-share-list .icon-active {
+  display: none;
+}
+
+.toggle-share-list.active .icon {
+  display: none;
+}
+
+.toggle-share-list.active .icon-active {
+  display: block;
+}
+
+.share-list {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background:  #9BCB30;
+  padding-right: 0;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: calc(100% - 10px);
+  transition: 0.2s ease;
+  width: 0;
+  overflow: hidden;
+}
+
+.share-list.show {
+  width: fit-content;
+  padding-right: 10px;
+}
+
+.share-list li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.share-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 100%;
+}
+
+.constructor-content {
+  padding-top: 24px;
+}
+
+.constructor-tabs {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  border: none;
+}
+
+.constructor-tabs .nav-link {
+  border-radius: 8px;
+  background: #EEF1F5;
+  display: flex;
+  padding: 11px 15.5px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.constructor-tabs .nav-link + .nav-link {
+  margin-left: 8px;
+}
+
+.constructor-tabs .nav-link.active {
+  border: none;
+  background: #9BCB30;
+}
+
+.constructor-slider-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.constructor-slider-prev, .constructor-slider-next {
+  width: fit-content;
+  height: fit-content;
+}
+
+.constructor-slide {
+  height: 450px;
+  padding: 30px 80px;
+  overflow: hidden;
+}
+
+.constructor-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.constructor-slider-pagination {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  position: static;
+}
+
+.constructor-slider-pagination .swiper-pagination-bullet {
+  width: 71px;
+  height: 71px;
+  opacity: 1;
+  margin: 0 2px!important;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.constructor-slider-pagination .swiper-pagination-bullet img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.constructor-slider-pagination .swiper-pagination-bullet-active {
+  border-color: #9BCB30;
+}
+
+.constructor-request-btn {
+  width: 318px;
+  margin: 32px auto 0;
+}
+
+.constructor-page-main {
+  margin-right: 370px;
+}
+
+.constructor-details-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 367px;
+  padding: 29px 0 67px 23px;
+  background: #F6F6F9;
+  z-index: 1;
+  min-height: 100%;
+}
+
+.constructor-details-title {
+  display: block;
+  margin-bottom: 24px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+}
+
+.constructor-details-item + .constructor-details-item {
+  margin-top: 32px;
+}
+
+.constructor-details-item {
+  width: 100%;
+}
+
+.constructor-details-item b {
+  display: block;
+  margin-bottom: 24px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+}
+
+.scroll-container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+.scroll-container::-webkit-scrollbar {
+  border-radius: 32px;
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  border-radius: 32px;
+  background: #E3E3ED;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  border-radius: 32px;
+  background: #BDBDCB;
+}
+
+.constructor-colors-item {
+  position: relative;
+}
+
+.constructor-colors-item + .constructor-colors-item {
+  margin-left: 12px;
+}
+
+.constructor-colors-item {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.constructor-colors-item input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.constructor-colors-item .checkmark {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+}
+
+.constructor-colors-item input:checked ~ .checkmark {
+  border: 4px solid #9bcb30;
+}
+
+.checkmark-color {
+  width: 100%;
+  height: 100%;
+}
+
+.constructor-wheels-item {
+  position: relative;
+}
+
+.constructor-wheels-item input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.constructor-wheels-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.constructor-wheels-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.constructor-wheels-item input:checked ~ .constructor-wheels-img {
+  border: 4px solid #9BCB30;
+}
+
+.constructor-wheels-item input:checked ~ .constructor-wheels-img img {
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  top: -4px;
+  left: -4px;
+}
+
+.constructor-wheels-item + .constructor-wheels-item {
+  margin-left: 16px;
+}
+
+.constructor-tires-item + .constructor-tires-item{
+  margin-left: 16px;
+}
+
+.constructor-tires-box {
+  display: flex;
+  width: 140px;
+  max-height: 300px;
+  padding: 11px 17px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #000;
+  height: 100%;
+}
+
+.constructor-tires-box img {
+  max-width: 101px;
+  max-height: 141px;
+}
+
+.constructor-tires-box p {
+  margin-top: 12px;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.constructor-tires-item {
+  position: relative;
+}
+
+.constructor-tires-item input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.constructor-tires-item input:checked ~ .constructor-tires-box {
+  border: 4px solid #9BCB30;
+  padding: 8px 14px 9px;
+}
+
+.constructor-options-item {
+  position: relative;
+  width: 152px;
+  flex-shrink: 0;
+}
+
+.constructor-options-item + .constructor-options-item {
+  margin-left: 26px;
+}
+
+.constructor-option-img {
+  width: 100%;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FFF;
+  position: relative;
+}
+
+.constructor-option-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.constructor-option-checkmark {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  top: -8px;
+  right: -9px;
+  border: 2px solid #9BCB30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.constructor-option-checkmark:before {
+  content: '';
+  background: url("../img/icon/checkmark-white.svg") no-repeat center/contain;
+  display: block;
+  width: 14px;
+  height: 10px;
+}
+
+.constructor-option-text {
+  margin-top: 11px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 15.6px */
+}
+
+.constructor-options-item input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.constructor-options-item input:checked ~ .constructor-option .constructor-option-checkmark {
+  background: #9BCB30;
+}
+
+.constructor-options {
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+.interior-slide {
+  height: 563px;
+}
+
+
 
 
 @import "media";
