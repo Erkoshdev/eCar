@@ -47,8 +47,15 @@ const brandsSwiper  = new Swiper('.brands-slider', {
   },
   breakpoints: {
     767: {
-      slidesPerView: 'auto',
-      spaceBetween: 90,
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+    1200: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    1300: {
+      slidesPerView: 5,
       centeredSlides: false,
     },
   }

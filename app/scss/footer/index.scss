@@ -18,7 +18,9 @@
 }
 
 .brands-slide {
-  width: fit-content!important;
+  display: flex;
+  justify-content: center;
+  min-width: fit-content!important;
 }
 
 .swiper-button-prev {
