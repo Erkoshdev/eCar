@@ -24,6 +24,6 @@
     "jquery": "^3.7.0",
     "jquery-mask-plugin": "^1.14.16",
     "nouislider": "^15.7.1",
-    "swiper": "^10.1.0"
+    "swiper": "8.4.7"
   }
 }

@@ -111,6 +111,7 @@ ul {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    max-width: 765px;
+    max-width: 100%;
+    padding: 0 19px;
   }
 }
