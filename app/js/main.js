@@ -73,6 +73,12 @@ $('.img-select-item').click(function (e) {
   wrapper.find($('.img-select-item')).removeClass('active');
   $(this).addClass('active');
 })
+$('.img-select-link').click(function () {
+  let attr = $(this).attr('data-img')
+  let img = $(this).closest('.product-card-img').find('img')
+  img.attr('src', attr)
+})
+
 
 //toggle filter brand list
 $('.toggle-filter-brand').click(function () {

@@ -286,9 +286,11 @@
   height: 225px;
   padding: 24px 0 48px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   position: relative;
   border-bottom: 1px solid #E0E0E0;
+  overflow: hidden;
 }
 
 .product-card-img img {
